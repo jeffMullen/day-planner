@@ -38,6 +38,12 @@ textarea {
   border-top: 1px solid white;
 }
 
+.row div:last-child {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+}
+
 .hour {
   background-color: #ffffff;
   color: #000000;
@@ -66,9 +72,13 @@ textarea {
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.saveBtn i:hover {
+.saveBtn:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
