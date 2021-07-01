@@ -34,13 +34,13 @@ var currentHour = parseInt(moment().format('H'));
 
 for (var i = 0; i < time.length; i++) {
     if (currentHour > parseInt(time[i].attr('id'))) {
-        time[i].css('background', 'grey');
+        time[i].addClass('past');
     }
     if (currentHour === parseInt(time[i].attr('id'))) {
-        time[i].css('background', 'green');
+        time[i].addClass('present');
     }
     if (currentHour < parseInt(time[i].attr('id'))) {
-        time[i].css('background', 'blue');
+        time[i].addClass('future');
     }
 }
 
@@ -51,11 +51,6 @@ console.log(currentHour);
 currentHour++;
 console.log(currentHour);
 
-
-
-function trackHour() {
-
-}
     // Variable for each large div
 
     // Array for all time div variables
