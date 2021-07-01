@@ -11,6 +11,17 @@
 // THEN the text for that event is saved in local storage
 // WHEN I refresh the page
 // THEN the saved events persist
+var nine = $('#9');
+var ten = $('#10');
+var eleven = $('#11');
+var twelve = $('#12');
+var thirteen = $('#13');
+var fourteen = $('#14');
+var fifteen = $('#15');
+var sixteen = $('#16');
+var seventeen = $('#17');
+
+var time = [nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen];
 
 
 
@@ -18,14 +29,33 @@
 var currentDay = moment().format('dddd, MMMM Do');
 $('#currentDay').text(currentDay);
 
+// Timeblocks color coded for past, present, and future ******
+var currentHour = parseInt(moment().format('H'));
+
+for (var i = 0; i < time.length; i++) {
+    if (currentHour > parseInt(time[i].attr('id'))) {
+        time[i].css('background', 'grey');
+    }
+    if (currentHour === parseInt(time[i].attr('id'))) {
+        time[i].css('background', 'green');
+    }
+    if (currentHour < parseInt(time[i].attr('id'))) {
+        time[i].css('background', 'blue');
+    }
+}
+
 // || Storing current hour for color display
-var currentHour = moment().format('H');
+console.log(typeof currentHour);
 console.log(currentHour);
 
-// Timeblocks color coded for past, present, and future ******
+currentHour++;
+console.log(currentHour);
 
-    // Moment.js to track which hour it is
 
+
+function trackHour() {
+
+}
     // Variable for each large div
 
     // Array for all time div variables
