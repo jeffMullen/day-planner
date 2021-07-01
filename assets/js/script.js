@@ -18,4 +18,4 @@
 var currentDay = moment().format('dddd, MMMM Do');
 $('#currentDay').text(currentDay);
 
-// Timeblocks represented by a row with 3 columns
+// Timeblocks color coded for past, present, and future
