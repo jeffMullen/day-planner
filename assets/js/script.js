@@ -51,36 +51,36 @@ console.log(currentHour);
 currentHour++;
 console.log(currentHour);
 
-    // Variable for each large div
+// Variable for each large div
 
-    // Array for all time div variables
+// Array for all time div variables
 
-    // Placeholder index that changes each time the hour changes moment.js
+// Placeholder index that changes each time the hour changes moment.js
 
-        // Event listener on change of moment.js
+// Event listener on change of moment.js
 
-    // If indexes are earlier in the array - past
+// If indexes are earlier in the array - past
 
-    //  If current index - present
+//  If current index - present
 
-    //  If indexes are later in array - future
+//  If indexes are later in array - future
 
-    // event listener on whole container
+// event listener on whole container
 
 
 // WHEN I click into a timeblock *******
 // THEN I can enter an event ********
 
-    // Text area in each large div
+// Text area in each large div
 
 
 // WHEN I click the save button for that timeblock *********
 // THEN the text for that event is saved in local storage ********
 
-    // Button on last div of each row
+// Button on last div of each row
 
-        //  Event listener click on container targeting buttons
+//  Event listener click on container targeting buttons
 
-    //  On click string is saved to local storage
+//  On click string is saved to local storage
 
-    //  On load text fields are populated from local storage
+//  On load text fields are populated from local storage
