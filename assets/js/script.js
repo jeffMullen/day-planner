@@ -69,7 +69,10 @@ console.log(currentHour);
 //  If indexes are later in array - future
 
 // event listener on whole container
+planner.on('click', 'button', function (event) {
 
+    console.log('Click!');
+})
 
 // WHEN I click into a timeblock *******
 // THEN I can enter an event ********
