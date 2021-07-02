@@ -22,7 +22,7 @@ body {
   border-radius: 15px;
 }
 
-.row {
+.row-wrapper {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
@@ -46,8 +46,7 @@ textarea {
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
-  /* width: 100%;
-  height: 30%; */
+  width: 100%;
 }
 
 .row div:last-child {
