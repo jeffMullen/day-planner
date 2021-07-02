@@ -12,6 +12,8 @@
 // WHEN I refresh the page
 // THEN the saved events persist
 var planner = $('#planner');
+var entry = $('#entry');
+console.log(entry);
 console.log(planner);
 
 var nine = $('#9');
@@ -68,13 +70,23 @@ console.log(currentHour);
 
 //  If indexes are later in array - future
 
+
+
+
+var buttonClicked;
 // event listener on whole container
 planner.on('click', 'button', function (event) {
+    buttonClicked = this;
+    console.log(buttonClicked);
     console.log('Click!');
     saveEntry();
 })
 
-function saveEntry() {
+function saveEntry(event) {
+    // choose textarea associated with button
+    console.log($(buttonClicked).parent().siblings().eq(1).children().children().children());
+    // save that text area's content in local storage
+
 
 }
 
