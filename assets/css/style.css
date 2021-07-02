@@ -49,6 +49,10 @@ textarea {
   width: 100%;
 }
 
+textarea:focus {
+  outline: 0;
+}
+
 .row div:last-child {
   display: flex;
   justify-content: flex-start;
