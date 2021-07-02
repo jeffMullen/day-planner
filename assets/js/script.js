@@ -11,6 +11,9 @@
 // THEN the text for that event is saved in local storage
 // WHEN I refresh the page
 // THEN the saved events persist
+var planner = $('#planner');
+console.log(planner);
+
 var nine = $('#9');
 var ten = $('#10');
 var eleven = $('#11');
@@ -70,9 +73,6 @@ console.log(currentHour);
 
 // WHEN I click into a timeblock *******
 // THEN I can enter an event ********
-
-// Text area in each large div
-
 
 // WHEN I click the save button for that timeblock *********
 // THEN the text for that event is saved in local storage ********

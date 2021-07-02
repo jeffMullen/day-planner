@@ -28,16 +28,6 @@ body {
   border-top: 1px solid white;
 }
 
-/* .row div:nth-child(2) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-/* .wrapper > div{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 textarea {
   background: transparent;
