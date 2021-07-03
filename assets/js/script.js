@@ -44,8 +44,20 @@ function saveEntry(event) {
     // || Choose textarea associated with button and save to local storage
     var textarea = $(buttonClicked).parent().siblings().eq(1).children().children().children();
     var inputId = textarea.attr('id');
-
     localStorage.setItem(inputId, textarea.val());
+
+    // || Message displaying that entry has been saved
+    var messageEl = $('<div>');
+    var messageP = $('<p>');
+    messageEl.append(messageP);
+    messageP.text('Entry has been saved to Local Storage');
+    messageEl.attr('id', 'message');
+    planner.prepend(messageEl);
+    messageEl.addClass('text-center');
+    messageEl.attr('style', 'display: block');
+    setTimeout(function () {
+        messageEl.attr('style', 'display: none');
+    }, 1500);
 }
 
 // || Loading events to the planner

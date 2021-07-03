@@ -17,6 +17,10 @@ body {
   white-space: pre-wrap;
 }
 
+#message {
+  display: none;
+}
+
 .time-block {
   text-align: center;
   border-radius: 15px;
@@ -91,3 +95,4 @@ textarea:focus {
 .saveBtn:focus {
   outline: 0;
 }
+
