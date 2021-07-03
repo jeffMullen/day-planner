@@ -85,10 +85,27 @@ planner.on('click', 'button', function (event) {
 function saveEntry(event) {
     // choose textarea associated with button
     console.log($(buttonClicked).parent().siblings().eq(1).children().children().children());
+
+    var textarea = $(buttonClicked).parent().siblings().eq(1).children().children().children();
+    var inputId = textarea.attr('id');
+    // var inputValue = textarea.val();
+    // console.log(inputId, inputId);
+    // console.log(inputId, textarea);
+    localStorage.setItem(inputId, textarea.val());
+    // console.log($(buttonClicked).parent().siblings().eq(1).children().children().children().val()
+    // );
+    // JSON.stringify()
     // save that text area's content in local storage
 
 
 }
+
+$('textarea').each(function () {
+    localStorage.getItem($(this).attr('id'));
+    console.log(localStorage.getItem($(this).attr('id'))
+    );
+    $(this).val(localStorage.getItem($(this).attr('id')));
+});
 
 // WHEN I click into a timeblock *******
 // THEN I can enter an event ********
