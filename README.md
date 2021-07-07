@@ -23,3 +23,5 @@
 * Loading the page will populate timeblocks with previously saved entries.
 
 ## Webpage
+
+![Day Planner Image](./assets/images/work-day-scheduler.png)
